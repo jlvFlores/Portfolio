@@ -66,6 +66,10 @@ button:enabled:active {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
+  background-image: url('assets/images/illustration-header-mobile.png');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% + 325px);
+  background-position-y: 118%;
 }
 
 .headline > * {
@@ -82,7 +86,7 @@ button:enabled:active {
   color: #ff6b00;
 }
 
-.headline h2 {
+.supporting-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -90,7 +94,7 @@ button:enabled:active {
   color: #fff5e1;
 }
 
-.headline h4 {
+.description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -99,20 +103,11 @@ button:enabled:active {
 }
 
 .social-media {
-  list-style: none;
   display: flex;
-  color: #dbd8d7;
 }
 
-.social-media li {
+.social-media a {
   margin: 10px;
-}
-
-.export-image {
-  position: absolute;
-  left: 60%;
-  top: 38.5%;
-  width: calc(100% * 0.4);
-  max-height: 360px;
-  overflow: hidden;
+  color: #dbd8d7;
+  font-size: 19px;
 }
