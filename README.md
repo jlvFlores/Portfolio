@@ -36,7 +36,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> Here is a list of the tech used in this project.
 
 <details>
   <summary>Client</summary>
@@ -50,7 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Description of 1-3 key features in the application.
 
 - A static header 
 - A container with a headline section
@@ -73,7 +73,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> How to get started and make use of this project.
 
 To get a local copy up and running, follow these steps.
 
@@ -113,7 +113,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> Here is a mention to all who collaborated in this project.
 
 👤 **Author1**
 
@@ -149,7 +149,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Message of encouragement.
 
-If you like this project you can buy me a coffee UwU
+If you like this project you can buy me a coffee UwU.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,7 @@ If you like this project you can buy me a coffee UwU
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> Credit is given to those who deserve it.
 
 I would like to thank those who've motivated me to not give up.
 
