@@ -19,10 +19,10 @@ header > * {
   align-items: center;
   font-size: 18px;
   line-height: 24px;
+  color: white;
 }
 
 header p {
-  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
