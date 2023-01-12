@@ -55,3 +55,70 @@ button:enabled:active {
   color: white;
   border: none;
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  top: 50px;
+}
+
+.headline {
+  list-style: none;
+  min-height: 590px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1a19;
+}
+
+.headline > * {
+  margin: 5px 20px;
+  width: 330px;
+}
+
+.headline h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.headline h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.headline h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  color: #dbd8d7;
+}
+
+.social-media li {
+  margin: 10px;
+}
+
+.export-image {
+  position: absolute;
+  left: 60%;
+  top: 38.5%;
+  width: calc(100% * 0.4);
+  max-height: 360px;
+  overflow: hidden;
+}
