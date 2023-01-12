@@ -26,12 +26,6 @@ header p {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
-  background-color: #3c3a39;
-  color: white;
-  border: none;
-}
-
 button:enabled {
   background-color: #f55800;
   color: white;
