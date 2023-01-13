@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* Header Section */
+
 header {
   position: absolute;
   width: 100%;
@@ -25,6 +27,8 @@ header > * {
 header p {
   font-family: 'Roboto', sans-serif;
 }
+
+/* Button Section */
 
 button:enabled {
   background-color: #f55800;
@@ -50,12 +54,16 @@ button:enabled:active {
   border: none;
 }
 
+/* Body Section */
+
 .container {
   position: relative;
   width: 100%;
   height: 590px;
   top: 50px;
 }
+
+/* Headline Section */
 
 .headline {
   list-style: none;
@@ -110,4 +118,127 @@ button:enabled:active {
   margin: 10px;
   color: #dbd8d7;
   font-size: 19px;
+}
+
+/* Works Section */
+
+.recent-works h2 {
+  margin: 80px 20px;
+  padding-bottom: 25px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #1C1A19;
+  border-bottom: 1px solid #212121;
+}
+
+.grid-con,
+.card-works {
+  margin: 80px 0px;
+  display: grid;
+  row-gap: 25px;
+}
+
+.featured,
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.featured > *,
+.card > * {
+  width: 88%;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.right-block h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091E42;
+}
+
+.right-block p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091E42;
+}
+
+.right-block .tags {
+  column-gap: 12px;
+  display: flex;
+  list-style: none;
+}
+
+.right-block .tags li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 10px 12px;
+  border: 1px solid #8993A4;
+  color: #091E42;
+}
+
+.featured-btn {
+  width: 120px;
+}
+
+.featured-btn,
+.card-btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+
+/* Card Works */
+
+.card img {
+  position: absolute;
+  z-index: -1;
+}
+
+.card .right-block {
+  flex-direction: column-reverse;
+  height: 390px;
+}
+
+.card h3,
+.card p,
+.card ul {
+  padding: 0 15px;
+  color: white;
+}
+
+.card h3{
+  order: 3;
+}
+
+.card p {
+  order: 2;
+}
+
+.card ul {
+  order: 1;
+}
+
+.right-block .tags li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
 }
