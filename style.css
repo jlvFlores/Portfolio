@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* Header Section */
+
 header {
   position: absolute;
   width: 100%;
@@ -22,9 +24,7 @@ header > * {
   color: white;
 }
 
-header p {
-  font-family: 'Roboto', sans-serif;
-}
+/* Button Section */
 
 button:enabled {
   background-color: #f55800;
@@ -36,6 +36,10 @@ button:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
+}
+
+.gen-desc button {
+  margin: 20px 0;
 }
 
 button:disabled {
@@ -50,12 +54,15 @@ button:enabled:active {
   border: none;
 }
 
+/* Body Section */
+
 .container {
   position: relative;
   width: 100%;
-  height: 590px;
   top: 50px;
 }
+
+/* Headline Section */
 
 .headline {
   list-style: none;
@@ -77,7 +84,8 @@ button:enabled:active {
   width: 330px;
 }
 
-.headline h1 {
+.headline h1,
+.heading-text {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 56px;
@@ -110,4 +118,217 @@ button:enabled:active {
   margin: 10px;
   color: #dbd8d7;
   font-size: 19px;
+}
+
+/* Works Section */
+
+.recent-works h2 {
+  margin: 80px 20px;
+  padding-bottom: 25px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+}
+
+.grid-con,
+.card-works {
+  margin: 80px 0;
+  display: grid;
+  row-gap: 25px;
+}
+
+.featured,
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.featured > *,
+.card > * {
+  width: 88%;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.right-block h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.right-block p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.skills li {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  list-style: none;
+  row-gap: 12px;
+}
+
+.right-block .tags {
+  column-gap: 12px;
+  display: flex;
+  list-style: none;
+}
+
+.skill-type li {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+}
+
+.right-block .tags li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+.regular-btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.right-block .regular-btn {
+  width: 120px;
+}
+
+.card-btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* Card Works */
+
+.card img {
+  position: absolute;
+  z-index: -1;
+}
+
+.card .right-block {
+  flex-direction: column-reverse;
+  height: 390px;
+}
+
+.card h3,
+.card p,
+.card ul {
+  padding: 0 15px;
+  color: white;
+}
+
+.card h3 {
+  order: 3;
+}
+
+.card p {
+  order: 2;
+}
+
+.card ul {
+  order: 1;
+}
+
+.card .right-block .tags li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
+}
+
+/* About Section */
+
+.about {
+  list-style: none;
+  min-height: 1800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1a19;
+  background-image: url('assets/images/Frame.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-x: calc(100%);
+  background-position-y: 18%;
+}
+
+.gen-desc {
+  width: 88%;
+  margin-bottom: 155px;
+}
+
+.gen-desc > * {
+  margin: 6px 0;
+}
+
+.paragraph-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+/* Skills Section */
+
+.skills {
+  height: 1200px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  row-gap: 24px;
+}
+
+.sub-skills {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.sub-skills img {
+  width: 18px;
+  height: 18px;
+}
+
+.skill-type {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }
