@@ -38,6 +38,10 @@ button:hover {
   border: 1px solid #f55800;
 }
 
+.gen-desc button {
+  margin: 20px 0;
+}
+
 button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
@@ -125,13 +129,13 @@ button:enabled:active {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
-  color: #1C1A19;
+  color: #1c1a19;
   border-bottom: 1px solid #212121;
 }
 
 .grid-con,
 .card-works {
-  margin: 80px 0px;
+  margin: 80px 0;
   display: grid;
   row-gap: 25px;
 }
@@ -160,21 +164,41 @@ button:enabled:active {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #091E42;
+  color: #091e42;
 }
 
-.right-block p{
+.right-block p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
+}
+
+.skills li {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  list-style: none;
+  row-gap: 12px;
 }
 
 .right-block .tags {
   column-gap: 12px;
   display: flex;
   list-style: none;
+}
+
+.skill-type li {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
 }
 
 .right-block .tags li {
@@ -184,16 +208,11 @@ button:enabled:active {
   line-height: 20px;
   text-decoration: none;
   padding: 10px 12px;
-  border: 1px solid #8993A4;
-  color: #091E42;
+  border: 1px solid #8993a4;
+  color: #091e42;
 }
 
-.right-block .regular-btn {
-  width: 120px;
-}
-
-.regular-btn,
-.card-btn {
+.regular-btn {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -201,6 +220,17 @@ button:enabled:active {
   line-height: 24px;
 }
 
+.right-block .regular-btn {
+  width: 120px;
+}
+
+.card-btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
 
 /* Card Works */
 
@@ -221,7 +251,7 @@ button:enabled:active {
   color: white;
 }
 
-.card h3{
+.card h3 {
   order: 3;
 }
 
@@ -262,11 +292,7 @@ button:enabled:active {
 }
 
 .gen-desc > * {
-  margin: 6px 0px;
-}
-
-.gen-desc button{
-  margin: 20px 0px;
+  margin: 6px 0;
 }
 
 .paragraph-text {
@@ -291,18 +317,6 @@ button:enabled:active {
   row-gap: 24px;
 }
 
-.skills li {  
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  list-style: none;
-  row-gap: 12px;
-}
-
 .sub-skills {
   display: flex;
   column-gap: 10px;
@@ -318,12 +332,4 @@ button:enabled:active {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-}
-
-.skill-type li {
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 43px;
-  text-align: center;
 }
