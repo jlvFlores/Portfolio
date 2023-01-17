@@ -382,3 +382,15 @@ button:enabled:active {
   width: 130px;
   height: 48px;
 }
+
+footer { 
+  margin-top: 100px; 
+  display: flex; 
+  justify-content: center;
+} 
+
+footer a { 
+  margin: 10px; 
+  color: #505F79; 
+  font-size: 19px; 
+} 
