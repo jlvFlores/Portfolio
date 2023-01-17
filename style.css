@@ -114,12 +114,6 @@ button:enabled:active {
   display: flex;
 }
 
-.social-media a {
-  margin: 10px;
-  color: #dbd8d7;
-  font-size: 19px;
-}
-
 /* Works Section */
 
 .recent-works h2 {
@@ -348,21 +342,21 @@ button:enabled:active {
 }
 
 .contact-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin: 120px 24px 60px;
 }
 
 .input-field,
-.textarea-field{
+.textarea-field {
   width: 327px;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -371,10 +365,10 @@ button:enabled:active {
 
 .input-field {
   height: 48px;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
-.textarea-field{
+.textarea-field {
   height: 114px;
 }
 
@@ -383,19 +377,25 @@ button:enabled:active {
   height: 48px;
 }
 
-footer { 
+footer {
   margin: 100px 0 55px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   background-image: url(assets/images/Shape.png);
   background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 50%;
   background-position-y: 100%;
-} 
+}
 
-footer a { 
-  margin: 10px; 
-  color: #505F79; 
-  font-size: 19px; 
-} 
+footer a {
+  margin: 10px;
+  color: #505f79;
+  font-size: 19px;
+}
+
+.social-media a {
+  margin: 10px;
+  color: #dbd8d7;
+  font-size: 19px;
+}
