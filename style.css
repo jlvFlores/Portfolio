@@ -384,9 +384,14 @@ button:enabled:active {
 }
 
 footer { 
-  margin-top: 100px; 
+  margin: 100px 0 55px;
   display: flex; 
   justify-content: center;
+  background-image: url(assets/images/Shape.png);
+  background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 50%;
+  background-position-y: 100%;
 } 
 
 footer a { 
