@@ -91,7 +91,7 @@ button:enabled:active {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
-  background-image: url('assets/images/illustration-header.png');
+  background-image: url('assets/images/Illustration-header.png');
   background-repeat: no-repeat;
   background-position-x: calc(100% + 375px);
   background-position-y: 35vh;
@@ -399,7 +399,7 @@ footer {
   margin: 100px 0 55px;
   display: flex;
   justify-content: center;
-  background-image: url(assets/images/Shape.png);
+  background-image: url('assets/images/Shape.png');
   background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 50%;
@@ -446,7 +446,7 @@ footer a {
     grid-template-columns: 140px 560px 1fr;
     grid-template-rows: repeat(5, 1fr);
     background-color: #1c1a19;
-    background-image: url('assets/images/illustration-header.png');
+    background-image: url('assets/images/Illustration-header.png');
     background-repeat: no-repeat;
     background-position-x: 92vh;
     background-position-y: 88%;
@@ -484,7 +484,7 @@ footer a {
     display: flex;
     flex-direction: column;
     margin: 135px 10% 120px;
-    background-image: url(assets/images/Shape.png);
+    background-image: url('assets/images/Shape.png');
     background-repeat: no-repeat;
     background-position: 95% 30px;
     background-size: calc(95% - 300px) 2px;
@@ -518,7 +518,7 @@ footer a {
 
   .about {
     align-items: flex-start;
-    background-image: url(assets/images/Frame.png);
+    background-image: url('assets/images/Frame.png');
     background-repeat: no-repeat;
     background-position-x: 105.5vh;
     background-position-y: 10%;
