@@ -424,6 +424,31 @@ footer a {
   font-size: 19px;
 }
 
+/* Animations */ 
+h1 { 
+  animation-duration: 2s; 
+  animation-name: slidein; 
+} 
+.supporting-text h2 { 
+  animation-duration: 4s; 
+  animation-name: slidein; 
+} 
+.description p { 
+  animation-duration: 5s; 
+  animation-name: slidein; 
+} 
+
+@keyframes slidein { 
+  from { 
+    margin-left: 100%; 
+    width: 300%; 
+  } 
+  to { 
+    margin-left: 0%; 
+    width: 100%; 
+  } 
+} 
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-left: 140px;
