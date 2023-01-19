@@ -293,14 +293,14 @@ button:enabled:active {
   background-color: #1c1a19;
   background-image: url('assets/images/Frame.png');
   background-repeat: no-repeat;
-  background-size: 35%;
-  background-position-x: 100%;
+  background-size: 72.5vh;
+  background-position-x: calc(100% + 275px);
   background-position-y: 18%;
 }
 
 .gen-desc {
   width: 88%;
-  margin-bottom: 155px;
+  margin-bottom: 240px;
 }
 
 .gen-desc > * {
@@ -518,10 +518,11 @@ footer a {
 
   .about {
     align-items: flex-start;
-    background-image: url(assets/images/Frame-1.png);
-    background-size: 40%;
-    background-position-x: 100%;
+    background-image: url(assets/images/Frame.png);
+    background-repeat: no-repeat;
+    background-position-x: 105.5vh;
     background-position-y: 10%;
+    background-size: 100vh;
     min-height: 1000px;
   }
 
