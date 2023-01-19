@@ -91,10 +91,11 @@ button:enabled:active {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
-  background-image: url('assets/images/illustration-header-mobile.png');
+  background-image: url('assets/images/illustration-header.png');
   background-repeat: no-repeat;
-  background-position-x: calc(100% + 325px);
-  background-position-y: 118%;
+  background-position-x: calc(100% + 375px);
+  background-position-y: 35vh;
+  background-size: 85vh;
 }
 
 .headline > * {
@@ -445,11 +446,11 @@ footer a {
     grid-template-columns: 140px 560px 1fr;
     grid-template-rows: repeat(5, 1fr);
     background-color: #1c1a19;
-    background-image: url('assets/images/illustration-header-mobile.png');
+    background-image: url('assets/images/illustration-header.png');
     background-repeat: no-repeat;
-    background-position-x: calc(100% + 590px);
-    background-position-y: 80%;
-    background-size: 100%;
+    background-position-x: 92vh;
+    background-position-y: 88%;
+    background-size: 200vh;
   }
 
   .primary-text,
