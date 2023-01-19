@@ -569,4 +569,24 @@ footer a {
     background-image: none;
     margin: 0 10%;
   }
+
+  @media screen and (max-width: 980px) {
+    .card .right-block h3 {
+      font-size: 24px;
+    }
+
+    .card .right-block p {
+      font-size: 12px;
+    }
+
+    .card .right-block .tags {
+      column-gap: 6px;
+      padding: 0 5%;
+    }
+
+    .card .right-block .tags li {
+      font-size: 12px;
+      padding: 5px 9px;
+    }
+  }
 }
