@@ -103,6 +103,11 @@ button:enabled:active {
   width: 330px;
 }
 
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
 .headline h1,
 .heading-text {
   font-family: 'Crete Round', sans-serif;
@@ -119,6 +124,8 @@ button:enabled:active {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
+  animation-duration: 4s;
+  animation-name: slidein;
 }
 
 .description {
@@ -424,30 +431,24 @@ footer a {
   font-size: 19px;
 }
 
-/* Animations */ 
-h1 { 
-  animation-duration: 2s; 
-  animation-name: slidein; 
-} 
-.supporting-text h2 { 
-  animation-duration: 4s; 
-  animation-name: slidein; 
-} 
-.description p { 
-  animation-duration: 5s; 
-  animation-name: slidein; 
-} 
+/* Animations */
 
-@keyframes slidein { 
-  from { 
-    margin-left: 100%; 
-    width: 300%; 
-  } 
-  to { 
-    margin-left: 0%; 
-    width: 100%; 
-  } 
-} 
+.description p {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .logo {
