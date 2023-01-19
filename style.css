@@ -222,6 +222,12 @@ button:enabled:active {
   color: #091e42;
 }
 
+.right-block .tags li:hover {
+  font-size: 18px;
+  padding: inherit 18px;
+  font-weight: 600;
+}
+
 .regular-btn {
   padding: 12px;
   font-family: 'Inter', sans-serif;
