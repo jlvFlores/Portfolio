@@ -24,6 +24,25 @@ header > * {
   color: white;
 }
 
+nav a {
+  color: white;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.nav-mobile {
+  display: block;
+}
+
 /* Button Section */
 
 button:enabled {
@@ -65,7 +84,6 @@ button:enabled:active {
 /* Headline Section */
 
 .headline {
-  list-style: none;
   min-height: 590px;
   height: 100vh;
   display: flex;
@@ -116,35 +134,32 @@ button:enabled:active {
 
 /* Works Section */
 
+.recent-works {
+  margin: 80px 6% 120px;
+  row-gap: 25px;
+}
+
 .recent-works h2 {
-  margin: 80px 20px;
-  padding-bottom: 25px;
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 40px;
   text-align: center;
   color: #1c1a19;
+  margin-bottom: 60px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #212121;
 }
 
-.grid-con,
 .card-works {
-  margin: 80px 0;
   display: grid;
-  row-gap: 25px;
+  gap: 25px;
 }
 
 .featured,
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 12px;
-}
-
-.featured > *,
-.card > * {
-  width: 88%;
+  row-gap: 25px;
 }
 
 .right-block {
@@ -231,6 +246,8 @@ button:enabled:active {
 .card img {
   position: absolute;
   z-index: -1;
+  width: 88%;
+  height: 390px;
 }
 
 .card .right-block {
@@ -276,7 +293,7 @@ button:enabled:active {
   background-image: url('assets/images/Frame.png');
   background-repeat: no-repeat;
   background-size: 35%;
-  background-position-x: calc(100%);
+  background-position-x: 100%;
   background-position-y: 18%;
 }
 
@@ -331,7 +348,7 @@ button:enabled:active {
 
 .form-container {
   display: grid;
-  grid-template-columns: 2;
+  margin: 125px 6% 0;
 }
 
 .contact-form {
@@ -349,7 +366,7 @@ button:enabled:active {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin: 120px 24px 60px;
+  margin-bottom: 60px;
 }
 
 .input-field,
@@ -398,4 +415,157 @@ footer a {
   margin: 10px;
   color: #dbd8d7;
   font-size: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 140px;
+    border: 1px solid #679;
+  }
+
+  nav {
+    margin-right: 140px;
+  }
+
+  nav > * {
+    margin: 0 15px;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .headline {
+    display: grid;
+    height: 870px;
+    grid-template-columns: 140px 560px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #1c1a19;
+    background-image: url('assets/images/illustration-header-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 590px);
+    background-position-y: 80%;
+    background-size: 100%;
+  }
+
+  .primary-text,
+  .supporting-text,
+  .description {
+    grid-column: 2;
+    width: 560px;
+  }
+
+  .primary-text {
+    grid-row: 1/5;
+    margin-bottom: 40px;
+  }
+
+  .supporting-text {
+    grid-row: 3;
+  }
+
+  .description {
+    grid-row: 2/6;
+  }
+
+  .social-media {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    grid-row: 3;
+  }
+
+  .recent-works {
+    display: flex;
+    flex-direction: column;
+    margin: 135px 10% 120px;
+    background-image: url(assets/images/Shape.png);
+    background-repeat: no-repeat;
+    background-position: 95% 30px;
+    background-size: calc(95% - 300px) 2px;
+  }
+
+  .recent-works h2 {
+    align-self: flex-start;
+    border: none;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: flex-start;
+    column-gap: 20px;
+    grid-column: 1 /4;
+  }
+
+  .featured img,
+  .featured .right-block {
+    width: 100%;
+  }
+
+  .card-works {
+    grid-template-columns: repeat(3, 31.4%);
+  }
+
+  .card img {
+    width: 25.12%;
+  }
+
+  .about {
+    align-items: flex-start;
+    background-image: url(assets/images/Frame-1.png);
+    background-size: 40%;
+    background-position-x: 100%;
+    background-position-y: 10%;
+    min-height: 1000px;
+  }
+
+  .gen-desc {
+    max-width: 540px;
+    margin: 130px 0 0 10%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10%;
+    padding-top: 140px;
+    width: 80%;
+    height: 400px;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr 2fr;
+    margin: 0 10%;
+    padding: 125px 0 180px;
+    column-gap: 25px;
+  }
+
+  .contact-text {
+    width: 330px;
+    text-align: left;
+  }
+
+  .contact-form {
+    align-items: flex-start;
+  }
+
+  .contact-form > * {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 130px;
+  }
+
+  footer {
+    background-image: none;
+    margin: 0 10%;
+  }
 }
