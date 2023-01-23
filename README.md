@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Portfolio-setup-and-mobile-first
+# Portfolio
 
 <!-- TABLE OF CONTENTS -->
 
@@ -10,27 +10,28 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀 Live Demo](#live-demo)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio-setup-and-mobile-first] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
 > The first step in a long project to come.
 
-**[Portfolio-setup-and-mobile-first]** is the toughest challenge I've yet faced.
+**[Portfolio]** is an ongoing project that im developing in the mocroverse course.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,12 +51,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Description of 1-3 key features in the application.
+> Description of some of the project's key features.
 
-- A static header 
-- A container with a headline section
-- An assets folder with one image
-- A CSS file adapted for mobile use
+- Contains headline, recent works and contact sections.
+- A responsive page template for mobile and desktop.
+- Has working linters to encourage clean code. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +65,7 @@
 
 > Here is a link to the demo project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- With the use of [GitHub pages](https://jlvflores.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,35 +79,29 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-    A web browser
+In order to run this project you need:  A web browser
 
 ### Setup
 
-Clone this repository to your desired folder:
-    https://github.com/jlvFlores/Portfolio-setup-and-mobile-first.git
+Clone this [repository](https://github.com/jlvFlores/Portfolio) to your desired folder
 
 ### Install
 
-Install this project with:
-    gitBash
+Install this project with:  gitBash
 
 ### Usage
 
-To run the project, execute the following command:
-    Press the Go Live button 
+To run the project, execute the following command:  Press the Go Live button on Visual Studio Code. 
 
 ### Run tests
 
-To run tests, run the following command:
-    Press the Go Live button 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+To run tests, run the following command:  Press the Go Live button on Visual Studio Code. 
 
 ### Deployment
 
-You can deploy this project using:
-    Using Github Pages
+You can deploy this project using:  Using [GitHub pages](https://jlvflores.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -115,11 +109,13 @@ You can deploy this project using:
 
 > Here is a mention to all who collaborated in this project.
 
-👤 **Author1**
+👤 **Jose Luis Vazquez Flores**
 
 - GitHub: [@jlvFlores](https://github.com/jlvFlores)
 - Twitter: [@JoseVaz44312762](https://twitter.com/JoseVaz44312762)
 - LinkedIn: [Jose Vazquez](https://www.linkedin.com/in/jose-vazquez-178a8225a/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
@@ -127,8 +123,8 @@ You can deploy this project using:
 
 > The following are the future features that will be added to the project.
 
-- [ ] **[It_will_have_more_sections]**
 - [ ] **[It_will_have_more_interactive_featues]**
+- [ ] **[Preserve_data_in_the_browser]**
 - [ ] **[It_will_probably_not_take_over_the_world]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
