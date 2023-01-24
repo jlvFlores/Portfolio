@@ -188,8 +188,11 @@
         <section id="contact" class="form-container">
             <p class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
             <form action="https://formspree.io/f/mjvdkwqz" method="post" class="contact-form">
+                <label for="user-name" hidden >Full name</label>
                 <input type="text" maxlength="30" placeholder="Full name" class="input-field" name="user-name" required>
+                <label for="user-email" hidden>Email</label>
                 <input type="email" placeholder="Email" class="input-field" name="user-email" required>
+                <label for="user-text" hidden>Message</label>
                 <textarea name="user-text" maxlength="500" placeholder="Enter Text here" class="textarea-field" required></textarea>
                 <button type="submit" class="submit-btn">Get in touch</button>
             </form>
