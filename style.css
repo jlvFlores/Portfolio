@@ -19,7 +19,7 @@ header > * {
   padding: 8px;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 24px;
   color: white;
 }
@@ -30,7 +30,7 @@ nav a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 20px;
   text-decoration: none;
 }
@@ -114,7 +114,7 @@ h1 {
 .heading-text {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -123,7 +123,7 @@ h1 {
 .supporting-text h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
   color: #fff5e1;
   animation-duration: 4s;
@@ -133,7 +133,7 @@ h1 {
 .description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   color: #fff;
 }
@@ -152,7 +152,7 @@ h1 {
 .recent-works h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5em;
   text-align: center;
   color: #1c1a19;
   margin-bottom: 60px;
@@ -181,7 +181,7 @@ h1 {
 .right-block h3 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   color: #091e42;
 }
@@ -189,7 +189,7 @@ h1 {
 .right-block p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   color: #091e42;
 }
@@ -199,7 +199,7 @@ h1 {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 700;
   line-height: 44px;
   list-style: none;
@@ -214,7 +214,7 @@ h1 {
 
 .skill-type li {
   font-family: 'Inter', sans-serif;
-  font-size: 22px;
+  font-size: 0.7em;
   font-weight: 400;
   line-height: 43px;
   text-align: center;
@@ -223,7 +223,7 @@ h1 {
 .right-block .tags li {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 20px;
   text-decoration: none;
   padding: 10px 12px;
@@ -232,7 +232,7 @@ h1 {
 }
 
 .right-block .tags li:hover {
-  font-size: 18px;
+  font-size: 1.125em;
   padding: inherit 18px;
   font-weight: 600;
   transition-duration: 0.2s;
@@ -242,7 +242,7 @@ h1 {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.0625em;
   line-height: 24px;
 }
 
@@ -254,7 +254,7 @@ h1 {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.0625em;
   line-height: 24px;
 }
 
@@ -265,6 +265,7 @@ h1 {
   z-index: -1;
   width: 88%;
   height: 390px;
+  filter: brightness(80%);
 }
 
 .card .right-block {
@@ -326,7 +327,7 @@ h1 {
 .paragraph-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   color: white;
 }
@@ -379,7 +380,7 @@ h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -393,8 +394,9 @@ h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 24px;
+  background: #FBF8F7;
 }
 
 .input-field {
@@ -425,13 +427,13 @@ footer {
 footer a {
   margin: 10px;
   color: #505f79;
-  font-size: 19px;
+  font-size: 1.1875em;
 }
 
 .social-media a {
   margin: 10px;
   color: #dbd8d7;
-  font-size: 19px;
+  font-size: 1.1875em;
 }
 
 /* Animations */
@@ -608,11 +610,11 @@ footer a {
 
   @media screen and (max-width: 980px) {
     .card .right-block h3 {
-      font-size: 24px;
+      font-size: 1.5em;
     }
 
     .card .right-block p {
-      font-size: 12px;
+      font-size: 0.75em;
     }
 
     .card .right-block .tags {
@@ -621,7 +623,7 @@ footer a {
     }
 
     .card .right-block .tags li {
-      font-size: 12px;
+      font-size: 0.75em;
       padding: 5px 9px;
     }
   }
