@@ -46,9 +46,9 @@ nav a {
 /* Button Section */
 
 button:enabled {
-  background-color: #f55800;
+  background-color: #cc4b00;
   color: white;
-  border: 1px solid #f55800;
+  border: 1px solid #cc4b00;
   cursor: pointer;
 }
 
