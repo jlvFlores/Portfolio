@@ -48,13 +48,14 @@ nav a {
 button:enabled {
   background-color: #f55800;
   color: white;
-  border: none;
+  border: 1px solid #f55800;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #fff5e1;
   color: #f55800;
-  border: 1px solid #f55800;
+  transition-duration: 0.4s;
 }
 
 .gen-desc button {
@@ -64,13 +65,14 @@ button:hover {
 button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
-  border: none;
+  border-color: #f4f1f0;
+  cursor: none;
 }
 
 button:enabled:active {
   background-color: #e05304;
   color: white;
-  border: none;
+  border-color: #e05304;
 }
 
 /* Body Section */
@@ -205,7 +207,7 @@ h1 {
 }
 
 .right-block .tags {
-  column-gap: 12px;
+  column-gap: 2%;
   display: flex;
   list-style: none;
 }
@@ -233,6 +235,7 @@ h1 {
   font-size: 18px;
   padding: inherit 18px;
   font-weight: 600;
+  transition-duration: 0.2s;
 }
 
 .regular-btn {
