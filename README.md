@@ -47,6 +47,13 @@
   </ul>
 </details>
 
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://jlvflores.github.io/Portfolio/">GitHub Pages</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
