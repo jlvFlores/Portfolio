@@ -31,7 +31,7 @@
 
 > The first step in a long project to come.
 
-**[Portfolio]** is an ongoing project that im developing in the mocroverse course.
+**[Portfolio]** is an ongoing project that im developing in the mocroverse course. If you're interested in knowing more about my thought process through the project, you can see my [loom video](https://www.loom.com/share/64144f7497c644668a40de255f9fbd9e).
 
 ## 🛠 Built With <a name="built-with"></a>
 
