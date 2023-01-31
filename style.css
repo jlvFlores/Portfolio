@@ -143,7 +143,7 @@ button:enabled:active {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
-  background-image: url('assets/images/Illustration-header.png');
+  background-image: url('assets/images/Headline-Illustration.png');
   background-repeat: no-repeat;
   background-position-x: calc(100% + 375px);
   background-position-y: 35vh;
@@ -288,7 +288,7 @@ h1 {
   transition-duration: 0.2s;
 }
 
-.regular-btn {
+.btn {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -296,19 +296,9 @@ h1 {
   line-height: 24px;
 }
 
-.right-block .regular-btn {
+.featured-btn {
   width: 120px;
 }
-
-.card-btn {
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1.0625em;
-  line-height: 24px;
-}
-
-/* Card Works */
 
 .card img {
   position: absolute;
@@ -358,7 +348,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
-  background-image: url('assets/images/Frame.png');
+  background-image: url('assets/images/About-Illustration.png');
   background-repeat: no-repeat;
   background-size: 72.5vh;
   background-position-x: calc(100% + 275px);
@@ -458,16 +448,11 @@ h1 {
   height: 114px;
 }
 
-.submit-btn {
-  width: 130px;
-  height: 48px;
-}
-
 footer {
   margin: 100px 0 55px;
   display: flex;
   justify-content: center;
-  background-image: url('assets/images/Shape.png');
+  background-image: url('assets/images/Bar.png');
   background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 50%;
@@ -520,7 +505,7 @@ footer {
     grid-template-columns: 140px 560px 1fr;
     grid-template-rows: repeat(5, 1fr);
     background-color: #1c1a19;
-    background-image: url('assets/images/Illustration-header.png');
+    background-image: url('assets/images/Headline-Illustration.png');
     background-repeat: no-repeat;
     background-position-x: 92vh;
     background-position-y: 88%;
@@ -558,7 +543,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 135px 10% 120px;
-    background-image: url('assets/images/Shape.png');
+    background-image: url('assets/images/Bar.png');
     background-repeat: no-repeat;
     background-position: 95% 30px;
     background-size: calc(95% - 300px) 2px;
@@ -592,7 +577,7 @@ footer {
 
   .about {
     align-items: flex-start;
-    background-image: url('assets/images/Frame.png');
+    background-image: url('assets/images/About-Illustration.png');
     background-repeat: no-repeat;
     background-position-x: 105.5vh;
     background-position-y: 10%;
@@ -632,12 +617,9 @@ footer {
     align-items: flex-start;
   }
 
-  .contact-form > * {
+  .contact-form > input,
+  .contact-form > textarea {
     width: 100%;
-  }
-
-  .submit-btn {
-    width: 130px;
   }
 
   footer {
