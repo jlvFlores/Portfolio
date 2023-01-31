@@ -8,15 +8,20 @@
 header {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   background-color: #3c3a39;
+  z-index: 10;
+}
+
+.header-container {
+  height: 90vh;
 }
 
 header > * {
-  margin: 10px 20px;
-  padding: 8px;
+  margin: 0 20px;
+  padding: 4px 8px;
   display: flex;
   align-items: center;
   font-size: 1.125em;
@@ -35,12 +40,8 @@ nav a {
   text-decoration: none;
 }
 
-.nav-desktop {
+.hide {
   display: none;
-}
-
-.nav-mobile {
-  display: block;
 }
 
 /* Button Section */
@@ -456,9 +457,8 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
+  #logo {
     margin-left: 140px;
-    border: 1px solid #679;
   }
 
   nav {
