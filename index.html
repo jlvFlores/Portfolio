@@ -11,13 +11,14 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="assets/images/Logo Placeholder.png" alt="Portfolio Logo"></a>
+        <a id="logo" href="index.html"><img src="assets/images/Logo Placeholder.png" alt="Portfolio Logo"></a>
         <nav>
-            <a href="#portfolio" class="nav-desktop">Portfolio</a>
-            <a href="#about" class="nav-desktop">About</a>
-            <a href="#contact" class="nav-desktop">contact</a>
-            <img class="nav-desktop" src="assets/images/Icon - Mail.png" alt="Contact icon">
-            <img class="nav-mobile" src="assets/images/Union.png" alt="Menu icon">
+            <a class="nav nav-desktop hide" href="#portfolio">Portfolio</a>
+            <a class="nav nav-desktop hide" href="#about">About</a>
+            <a class="nav nav-desktop hide" href="#contact">contact</a>
+            <img class="nav nav-desktop hide" src="assets/images/Icon - Mail.png" alt="Contact icon">
+            <img id="menu-icon" class="nav nav-mobile" src="assets/images/Menu.png" alt="Menu icon">
+            <img id="exit-icon" class="nav nav-mobile hide" src="assets/images/Exit.png" alt="Exit icon">
         </nav>
     </header>
 
@@ -205,5 +206,6 @@
             <a href="#"><i class="fa fa-brands fa-medium fa-1x"></i></a>
         </footer>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
