@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Header Section */
 
 header {
@@ -12,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #3c3a39;
-  z-index: 10;
+  z-index: 1;
 }
 
 .header-container {
