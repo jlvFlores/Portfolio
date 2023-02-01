@@ -214,6 +214,10 @@ h1 {
   gap: 25px;
 }
 
+.featured-work {
+  margin-bottom: 1.5rem;
+}
+
 .featured,
 .card {
   display: flex;
