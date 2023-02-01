@@ -16,18 +16,17 @@ function toggleMenu() {
 }
 
 function popupWindow(id) {
-
   const work = {
     title: document.querySelector(`[data-card="${id}"] h3`).textContent,
     listArray: document.querySelectorAll(`[data-card="${id}"] li`),
-    image:  document.querySelector(`[data-card="${id}"] img`).getAttribute('src'),
+    image: document.querySelector(`[data-card="${id}"] img`).getAttribute('src'),
     description: document.querySelector(`[data-card="${id}"] p`).textContent,
     liveUrl: '#',
     sourceUrl: '#',
-  }
+  };
 
   const currentWork = document.querySelector(`[data-card="${id}"]`);
-  currentWork.insertAdjacentHTML('afterend', 
+  currentWork.insertAdjacentHTML('afterend',
     `<div class="overlay" id="modal-container">
       <div class="modal">
         <div class="heading">
@@ -46,20 +45,19 @@ function popupWindow(id) {
           <button href="${work.sourceUrl}" class="btn">See Source <img src="assets/images/Github.png" alt="GitHub logo"></button>
         </div>
       </div>
-    </div>`
-  );
+    </div>`);
 
   const modal = document.getElementById('modal-container');
   const exitIcon = document.getElementById('exit-modal');
   const ul = document.querySelector('.modal-tags');
-  
-  work.listArray.forEach(element => {
-    let li = document.createElement('li');
+
+  work.listArray.forEach((element) => {
+    const li = document.createElement('li');
     li.innerHTML = element.innerHTML;
     ul.appendChild(li);
   });
 
-  exitIcon.addEventListener("click", function() {
+  exitIcon.addEventListener('click', () => {
     modal.parentElement.removeChild(modal);
   });
 }
