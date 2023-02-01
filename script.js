@@ -35,11 +35,11 @@ function popupWindow(id) {
           <img id="exit-modal" src="assets/images/Exit.png" alt="Exit icon">
         </div>
 
-        <ul class="tags"></ul>
+        <ul class="modal-tags"></ul>
 
         <img src="${work.image}" alt="Card placeholder">
         
-        <p class="">${work.description}</p>
+        <p>${work.description}</p>
 
         <div class="buttons">
           <button href="${work.liveUrl}" class="btn">See Live <img src="assets/images/Live.png" alt="Arrow Pointing To Upper Right Corner"></button>
@@ -51,11 +51,13 @@ function popupWindow(id) {
 
   const modal = document.getElementById('modal-container');
   const exitIcon = document.getElementById('exit-modal');
-  const ul = document.querySelector('.modal ul');
-
-  for (let i = 0; i < work.listArray.length; i++) {
-    ul.appendChild(work.listArray[i]);
-  }
+  const ul = document.querySelector('.modal-tags');
+  
+  work.listArray.forEach(element => {
+    let li = document.createElement('li');
+    li.innerHTML = element.innerHTML;
+    ul.appendChild(li);
+  });
 
   exitIcon.addEventListener("click", function() {
     modal.parentElement.removeChild(modal);
