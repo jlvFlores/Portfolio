@@ -150,7 +150,7 @@ function popupWindow(id) {
 
   worksArray[id].listArray.forEach((element) => {
     const li = document.createElement('li');
-    li.innerHTML = element.innerHTML;
+    li.innerHTML = element;
     ul.appendChild(li);
   });
 
