@@ -80,6 +80,10 @@ const worksArray = [
 const featuredContainer = document.querySelector('.featured-work');
 const cardsContainer = document.querySelector('.card-works');
 
+// form validation variables
+const form = document.getElementById('contact-form');
+const email = document.querySelector('#user-email');
+
 worksArray.forEach((work) => {
   if (work.id === 0) {
     featuredContainer.insertAdjacentHTML('beforeend', `
@@ -163,3 +167,17 @@ navMenuListItems.forEach((element) => element.addEventListener('click', toggleMe
 workButtons.forEach((button) => button.addEventListener('click', (e) => {
   popupWindow(e.target.dataset.id);
 }));
+
+form.addEventListener('submit', (event) => {
+  const lowercasedEmail = email.value.toLocaleLowerCase();
+  if (email.value === lowercasedEmail) {
+    form.submit();
+  } else {
+    form.insertAdjacentHTML('beforeend', `
+    <span class="error-message">Please make sure your email is in lowercase letters.</span>
+    <span>Your email should look like this </span>
+    <span class="correct-message">${lowercasedEmail}</span>
+    `);
+    event.preventDefault();
+  }
+});

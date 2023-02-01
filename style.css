@@ -555,6 +555,22 @@ footer {
   column-gap: 1.125rem;
 }
 
+form span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+}
+
+.error-message {
+  color: #f44336;
+}
+
+.correct-message {
+  color: #4caf50;
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;

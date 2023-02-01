@@ -101,13 +101,13 @@
         </section>
         <section id="contact" class="form-container">
             <p class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-            <form action="https://formspree.io/f/mjvdkwqz" method="post" class="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/mjvdkwqz" method="post" class="contact-form">
                 <label for="user-name" hidden >Full name</label>
-                <input type="text" maxlength="30" placeholder="Full name" class="input-field" name="user-name" required>
+                <input type="text" id="user-name" name="user-name" class="input-field" placeholder="Full name" maxlength="30" required>
                 <label for="user-email" hidden>Email</label>
-                <input type="email" placeholder="Email" class="input-field" name="user-email" required>
+                <input type="email" id="user-email" name="user-email" class="input-field" placeholder="Email" required>
                 <label for="user-text" hidden>Message</label>
-                <textarea name="user-text" maxlength="500" placeholder="Enter Text here" class="textarea-field" required></textarea>
+                <textarea id="user-text" name="user-text" class="textarea-field" placeholder="Enter Text here" maxlength="500" required></textarea>
                 <button type="submit" class="btn">Get in touch</button>
             </form>
         </section>
