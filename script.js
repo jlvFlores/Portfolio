@@ -88,11 +88,11 @@ const inputName = document.getElementById('user-name');
 const inputEmail = document.getElementById('user-email');
 const inputMessage = document.getElementById('user-message');
 
-let userData = {
+const userData = {
   name: JSON.parse(localStorage.getItem('userData')).name,
   email: JSON.parse(localStorage.getItem('userData')).email,
   message: JSON.parse(localStorage.getItem('userData')).message,
-}
+};
 
 worksArray.forEach((work) => {
   if (work.id === 0) {
