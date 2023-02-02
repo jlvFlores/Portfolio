@@ -82,7 +82,17 @@ const cardsContainer = document.querySelector('.card-works');
 
 // form validation variables
 const form = document.getElementById('contact-form');
-const email = document.querySelector('#user-email');
+
+// Local storage variables
+const inputName = document.getElementById('user-name');
+const inputEmail = document.getElementById('user-email');
+const inputMessage = document.getElementById('user-message');
+
+let userData = {
+  name: '',
+  email: '',
+  message: '',
+}
 
 worksArray.forEach((work) => {
   if (work.id === 0) {
@@ -163,14 +173,35 @@ function popupWindow(id) {
   });
 }
 
+function loadUserInfo() {
+  inputName.value = JSON.parse(localStorage.getItem('userData')).name
+  inputEmail.value = JSON.parse(localStorage.getItem('userData')).email
+  inputMessage.value = JSON.parse(localStorage.getItem('userData')).message
+}
+
+window.onload = loadUserInfo;
+
+inputName.addEventListener('keyup', (e) => {
+  userData.name = e.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+inputEmail.addEventListener('keyup', (e) => {
+  userData.email = e.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+inputMessage.addEventListener('keyup', (e) => {
+  userData.message = e.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+
 navMenuListItems.forEach((element) => element.addEventListener('click', toggleMenu));
 workButtons.forEach((button) => button.addEventListener('click', (e) => {
   popupWindow(e.target.dataset.id);
 }));
 
 form.addEventListener('submit', (event) => {
-  const lowercasedEmail = email.value.toLocaleLowerCase();
-  if (email.value === lowercasedEmail) {
+  const lowercasedEmail = inputEmail.value.toLocaleLowerCase();
+  if (inputEmail.value === lowercasedEmail) {
     form.submit();
   } else {
     form.insertAdjacentHTML('beforeend', `
