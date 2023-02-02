@@ -89,9 +89,9 @@ const inputEmail = document.getElementById('user-email');
 const inputMessage = document.getElementById('user-message');
 
 let userData = {
-  name: '',
-  email: '',
-  message: '',
+  name: JSON.parse(localStorage.getItem('userData')).name,
+  email: JSON.parse(localStorage.getItem('userData')).email,
+  message: JSON.parse(localStorage.getItem('userData')).message,
 }
 
 worksArray.forEach((work) => {
@@ -174,9 +174,9 @@ function popupWindow(id) {
 }
 
 function loadUserInfo() {
-  inputName.value = JSON.parse(localStorage.getItem('userData')).name
-  inputEmail.value = JSON.parse(localStorage.getItem('userData')).email
-  inputMessage.value = JSON.parse(localStorage.getItem('userData')).message
+  inputName.value = JSON.parse(localStorage.getItem('userData')).name;
+  inputEmail.value = JSON.parse(localStorage.getItem('userData')).email;
+  inputMessage.value = JSON.parse(localStorage.getItem('userData')).message;
 }
 
 window.onload = loadUserInfo;
