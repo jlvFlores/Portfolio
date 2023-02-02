@@ -87,6 +87,7 @@ const form = document.getElementById('contact-form');
 const inputName = document.getElementById('user-name');
 const inputEmail = document.getElementById('user-email');
 const inputMessage = document.getElementById('user-message');
+const inputFields = document.querySelectorAll('.field');
 
 const userData = {
   name: JSON.parse(localStorage.getItem('userData')).name,
@@ -179,20 +180,16 @@ function loadUserInfo() {
   inputMessage.value = JSON.parse(localStorage.getItem('userData')).message;
 }
 
+const setLocalStorage = (event, data) => {
+  userData[data] = event.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+};
+
 window.onload = loadUserInfo;
 
-inputName.addEventListener('keyup', (e) => {
-  userData.name = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
-inputEmail.addEventListener('keyup', (e) => {
-  userData.email = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
-inputMessage.addEventListener('keyup', (e) => {
-  userData.message = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
+inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
+  setLocalStorage(e, field.name);
+}));
 
 navMenuListItems.forEach((element) => element.addEventListener('click', toggleMenu));
 workButtons.forEach((button) => button.addEventListener('click', (e) => {
