@@ -8,73 +8,33 @@ const logo = document.querySelector('#logo');
 const worksArray = [
   {
     id: 0,
-    title: 'Multi-Post Stories',
-    listArray: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Featured-Placeholder.png',
-    imageAlt: 'Featured work, ballet dancer inside orange circle and border',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    liveUrl: '#',
-    sourceUrl: '#',
+    title: 'To-Do-List',
+    listArray: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'JEST'],
+    image: 'assets/images/To-do-list.png',
+    imageAlt: 'To do list page with a short list of task',
+    description: 'The successor to the Awesome Library project. It has the same and functions as well as new features that allow users to delete groups of list and edit the already existing text in the list item.',
+    liveUrl: 'https://jlvflores.github.io/To-Do-list/dist/',
+    sourceUrl: 'https://github.com/jlvFlores/To-Do-list',
   },
   {
     id: 1,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
+    title: 'Awesome Books',
+    listArray: ['HTML', 'CSS', 'JavaScript'],
+    image: 'assets/images/Awesome-books.png',
+    imageAlt: 'List page of the Awesome books site',
+    description: 'A single-page dynamic library that displays books added or removed by the user using their browser\'s localStorage.',
+    liveUrl: 'https://jlvflores.github.io/Awesome-books-with-ES6/',
+    sourceUrl: 'https://github.com/jlvFlores/Awesome-books-with-ES6',
   },
   {
     id: 2,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
-  },
-  {
-    id: 3,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
-  },
-  {
-    id: 4,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
-  },
-  {
-    id: 5,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
-  },
-  {
-    id: 6,
-    title: 'Profesional Art Printing Data',
-    listArray: ['HTML', 'Bootstrap', 'Ruby'],
-    image: 'assets/images/Card-Placeholder.png',
-    imageAlt: 'Project image with a vertical dark gradient',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard.',
-    liveUrl: '#',
-    sourceUrl: '#',
+    title: 'Capstone',
+    listArray: ['HTML', 'CSS', 'JavaScript'],
+    image: 'assets/images/Capstone-1.png',
+    imageAlt: 'Middle section of the main page of my capstone project',
+    description: 'This is the first major website that I created after created my portfolio site. I contain a dynamic list of special guest and a navigation bar that turns into a drawer when seen on mobile screens.',
+    liveUrl: 'https://jlvflores.github.io/Module1-Capstone-project/',
+    sourceUrl: 'https://github.com/jlvFlores/Module1-Capstone-project',
   },
 ];
 const featuredContainer = document.querySelector('.featured-work');
@@ -89,11 +49,15 @@ const inputEmail = document.getElementById('user-email');
 const inputMessage = document.getElementById('user-message');
 const inputFields = document.querySelectorAll('.field');
 
-const userData = {
-  name: JSON.parse(localStorage.getItem('userData')).name,
-  email: JSON.parse(localStorage.getItem('userData')).email,
-  message: JSON.parse(localStorage.getItem('userData')).message,
-};
+let userData = [];
+
+if (JSON.parse(localStorage.getItem('userData'))) {
+  userData = {
+    name: JSON.parse(localStorage.getItem('userData')).name,
+    email: JSON.parse(localStorage.getItem('userData')).email,
+    message: JSON.parse(localStorage.getItem('userData')).message,
+  };
+}
 
 worksArray.forEach((work) => {
   if (work.id === 0) {
@@ -108,6 +72,7 @@ worksArray.forEach((work) => {
         <li>${work.listArray[1]}</li>
         <li>${work.listArray[2]}</li>
         <li>${work.listArray[3]}</li>
+        <li>${work.listArray[4]}</li>
         </ul>
         <button class="btn featured-btn work-btn" data-id="${work.id}">See Project</button>
       </div>
@@ -120,9 +85,9 @@ worksArray.forEach((work) => {
         <h3>${work.title}</h3>
         <p>${work.description}</p>
         <ul class="tags">
-        <li>${work.listArray[0]}</li>
-        <li>${work.listArray[1]}</li>
-        <li>${work.listArray[2]}</li>
+          <li>${work.listArray[0]}</li>
+          <li>${work.listArray[1]}</li>
+          <li>${work.listArray[2]}</li>
         </ul>
         <button class="btn work-btn" data-id="${work.id}">See Project</button>
       </div>
@@ -153,8 +118,8 @@ function popupWindow(id) {
         <img src="${worksArray[id].image}" alt="Card placeholder">
         <p>${worksArray[id].description}</p>
         <div class="buttons">
-          <button href="${worksArray[id].liveUrl}" class="btn">See Live <img src="assets/images/Live.png" alt="Arrow Pointing To Upper Right Corner"></button>
-          <button href="${worksArray[id].sourceUrl}" class="btn">See Source <img src="assets/images/Github.png" alt="GitHub logo"></button>
+          <a href="${worksArray[id].liveUrl}" class="btn">See Live <img src="assets/images/Live.png" alt="Arrow Pointing To Upper Right Corner"></a>
+          <a href="${worksArray[id].sourceUrl}" class="btn">See Source <img src="assets/images/Github.png" alt="GitHub logo"></a>
         </div>
       </div>
     </div>`);
@@ -175,9 +140,11 @@ function popupWindow(id) {
 }
 
 function loadUserInfo() {
-  inputName.value = JSON.parse(localStorage.getItem('userData')).name;
-  inputEmail.value = JSON.parse(localStorage.getItem('userData')).email;
-  inputMessage.value = JSON.parse(localStorage.getItem('userData')).message;
+  if (JSON.parse(localStorage.getItem('userData'))) {
+    inputName.value = JSON.parse(localStorage.getItem('userData')).name;
+    inputEmail.value = JSON.parse(localStorage.getItem('userData')).email;
+    inputMessage.value = JSON.parse(localStorage.getItem('userData')).message;
+  }
 }
 
 const setLocalStorage = (event, data) => {
@@ -202,7 +169,9 @@ form.addEventListener('submit', (event) => {
     form.submit();
   } else {
     form.insertAdjacentHTML('beforeend', `
-    <span class="error-message">Please make sure your email is in lowercase letters.</span>
+    <span class="error-message">
+      Please make sure your email is in lowercase letters.
+    </span>
     <span>Your email should look like this </span>
     <span class="correct-message">${lowercasedEmail}</span>
     `);

@@ -315,6 +315,15 @@ h1 {
   font-weight: 700;
   font-size: 1.0625em;
   line-height: 24px;
+  background-color: #cc4b00;
+  border: 1px solid #cc4b00;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #cc4b00;
+  background-color: #fff;
 }
 
 .featured-btn {
@@ -326,7 +335,7 @@ h1 {
   z-index: -1;
   width: 88%;
   height: 390px;
-  filter: brightness(80%);
+  filter: brightness(50%);
 }
 
 .card .right-block {
